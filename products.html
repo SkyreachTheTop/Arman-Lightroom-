@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Products - Arman Lightroom</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="cart.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products | Arman Lightroom</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1>Our Electronics</h1>
+    <h1>Arman Lightroom</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="products">
-    <div class="product">
-      <h3>Smartphone</h3>
-      <p>₹12,999</p>
-      <button onclick="addToCart('Smartphone', 12999)">Add to Cart</button>
-    </div>
+  <section class="products-section">
+    <h2>Our Products</h2>
+    <div class="products-container">
 
-    <div class="product">
-      <h3>Bluetooth Speaker</h3>
-      <p>₹2,499</p>
-      <button onclick="addToCart('Bluetooth Speaker', 2499)">Add to Cart</button>
-    </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 1">
+        <h3>Smartphone</h3>
+        <p>₹9,999</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
 
-    <div class="product">
-      <h3>LED TV</h3>
-      <p>₹24,999</p>
-      <button onclick="addToCart('LED TV', 24999)">Add to Cart</button>
-    </div>
-  </section>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 2">
+        <h3>Wireless Earbuds</h3>
+        <p>₹1,299</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
 
-  <section class="cart-section">
-    <h2>🛒 Your Cart</h2>
-    <ul id="cartList"></ul>
-    <p><strong>Total: ₹<span id="cartTotal">0</span></strong></p>
-    <a href="payment.html" onclick="saveTotalToStorage()" class="btn">Proceed to Payment</a>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 3">
+        <h3>Smartwatch</h3>
+        <p>₹2,499</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Arman Lightroom</p>
+    <p>© 2025 Arman Lightroom. All rights reserved.</p>
   </footer>
 
 </body>
