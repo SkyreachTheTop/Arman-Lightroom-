@@ -247,3 +247,43 @@ footer {
 .whatsapp-btn:hover {
   background-color: #1ebe5d;
 }
+.testimonials {
+  padding: 60px 20px;
+  background-color: #000;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #FFD700;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.testimonial-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.testimonial {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  color: #ccc;
+  font-style: italic;
+  border: 1px solid #222;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+  transition: transform 0.3s;
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
+.testimonial h4 {
+  color: #00BFFF;
+  margin-top: 10px;
+  font-weight: normal;
+}
