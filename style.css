@@ -1,126 +1,105 @@
-/* General Styles */
-body {
+/* Reset default margin/padding */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  line-height: 1.6;
 }
 
-/* Header */
 header {
-  background-color: #003366;
-  color: white;
+  background-color: #111;
   padding: 20px;
   text-align: center;
+  border-bottom: 2px solid #FFD700;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+header h1 {
+  color: #00BFFF;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(to right, #004080, #0080ff);
-  color: white;
-}
-
-.hero .btn {
-  background-color: white;
-  color: #004080;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hero .btn:hover {
-  background-color: #e0e0e0;
-}
-
-/* Footer */
-footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  position: relative;
-}
-
-.whatsapp {
-  display: inline-block;
-  margin-top: 10px;
-  color: #25D366;
-  font-weight: bold;
-}
-.testimonials {
-  padding: 30px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.testimonial {
-  background-color: white;
-  border-left: 5px solid #004080;
-  padding: 15px 20px;
-  margin: 20px 0;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-.contact-section {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.contact-section form {
+nav ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-}
-
-.contact-section label {
+  justify-content: center;
   margin-top: 10px;
-  font-weight: bold;
 }
 
-.contact-section input,
-.contact-section textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+nav ul li {
+  margin: 0 15px;
 }
 
-.contact-section button {
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #004080;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.whatsapp-contact {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.whatsapp-contact .btn {
-  background-color: #25D366;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+nav ul li a {
+  color: #FFD700;
   text-decoration: none;
   font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #00BFFF;
+}
+
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #000000, #111111);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #00BFFF;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #FFD700;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: #00BFFF;
+  color: #fff;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #111111;
+}
+
+.features div {
+  max-width: 250px;
+  text-align: center;
+}
+
+.features h3 {
+  color: #00BFFF;
+  margin-bottom: 10px;
+}
+
+.features p {
+  color: #ccc;
+}
+
+footer {
+  background-color: #000;
+  color: #FFD700;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #00BFFF;
 }
