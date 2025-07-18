@@ -186,3 +186,64 @@ footer {
 .about-boxes .box p {
   color: #ccc;
 }
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #111;
+}
+
+.contact-section h2 {
+  color: #FFD700;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #222;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form .btn {
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #00BFFF;
+  color: white;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
