@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment - Arman Lightroom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Confirm Your Order</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="payment-section">
+    <h2>Total Amount: ₹<span id="finalAmount">0</span></h2>
+    
+    <button onclick="confirmPayment()">✅ Confirm Payment</button>
+
+    <div id="confirmationMessage" style="display:none; margin-top: 20px; color: green;">
+      🎉 Payment Successful! Thank you for your order.
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Arman Lightroom</p>
+  </footer>
+
+  <script>
+    // Get total from localStorage or dummy amount
+    const finalAmount = localStorage.getItem('cartTotal') || 0;
+    document.getElementById('finalAmount').innerText = finalAmount;
+
+    function confirmPayment() {
+      document.getElementById('confirmationMessage').style.display = 'block';
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 3000); // 3 sec baad home page
+    }
+  </script>
+
+</body>
+</html>
