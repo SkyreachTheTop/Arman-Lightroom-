@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - Arman Lightroom</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="cart.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Our Electronics</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <h3>Smartphone</h3>
+      <p>₹12,999</p>
+      <button onclick="addToCart('Smartphone', 12999)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h3>Bluetooth Speaker</h3>
+      <p>₹2,499</p>
+      <button onclick="addToCart('Bluetooth Speaker', 2499)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h3>LED TV</h3>
+      <p>₹24,999</p>
+      <button onclick="addToCart('LED TV', 24999)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="cart-section">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cartList"></ul>
+    <p><strong>Total: ₹<span id="cartTotal">0</span></strong></p>
+    <a href="payment.html" onclick="saveTotalToStorage()" class="btn">Proceed to Payment</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Arman Lightroom</p>
+  </footer>
+
+</body>
+</html>
