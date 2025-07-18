@@ -143,3 +143,46 @@ footer {
   color: #FFD700;
   font-weight: bold;
 }
+.about-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #111;
+}
+
+.about-section h2 {
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #ccc;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-boxes .box {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.about-boxes .box h3 {
+  color: #00BFFF;
+  margin-bottom: 10px;
+}
+
+.about-boxes .box p {
+  color: #ccc;
+}
